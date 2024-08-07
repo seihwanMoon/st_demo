@@ -8,10 +8,24 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 
 # 페이지 설정
 st.set_page_config(page_title="서울시 택배 물류 분석", page_icon="📦", layout="wide")
+#------------------
+# 한글처리용 필요한 라이브러리 설치
+# !apt-get -qq install fonts-nanum
+
+# 폰트 캐시 재설정
+import matplotlib.font_manager as fm
+import matplotlib.pyplot as plt
+
+# NanumGothic 폰트 경로 지정
+font_path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
+fm.fontManager.addfont(font_path)
+plt.rc('font', family='NanumGothic')  # Matplotlib에 폰트 설정
+
+#----------------
 
 # 폰트 설정
 # plt.rcParams['font.family'] = 'AppleGothic'  # 맥
-plt.rcParams['font.family'] = 'Malgun Gothic'  # 윈도우
+# plt.rcParams['font.family'] = 'Malgun Gothic'  # 윈도우
 
 # --- 데이터 로드 및 전처리 ---
 # 1. CSV 데이터 업로드
