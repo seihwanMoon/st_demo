@@ -11,8 +11,8 @@ st.set_page_config(page_title="서울시 택배 물류 분석", page_icon="📦"
 #------------------
 
 # 폰트 설정
-plt.rcParams['font.family'] = 'AppleGothic'  # 맥
-# plt.rcParams['font.family'] = 'Malgun Gothic'  # 윈도우
+# plt.rcParams['font.family'] = 'AppleGothic'  # 맥
+plt.rcParams['font.family'] = 'Malgun Gothic'  # 윈도우
 
 # --- 데이터 로드 및 전처리 ---
 # 1. CSV 데이터 업로드
