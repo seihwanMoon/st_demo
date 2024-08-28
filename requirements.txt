@@ -1,6 +1,6 @@
 streamlit
 pandas==1.5.3
-pandasai==2.2.10
+pandasai
 matplotlib==3.8.4
 groq
 langchain-groq
