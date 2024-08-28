@@ -1,8 +1,8 @@
 import os
 import streamlit as st
-import pandas as pd
 from pandasai import SmartDataframe
 from pandasai.connectors import PandasConnector
+import pandas as pd
 from dotenv import load_dotenv
 from langchain_groq.chat_models import ChatGroq
 import pandasai as pai
