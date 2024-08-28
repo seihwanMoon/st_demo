@@ -1,6 +1,7 @@
 streamlit
+pandas
 pandasai
-matplotlib==3.8.4
+matplotlib
 groq
 langchain-groq
 python-dotenv
