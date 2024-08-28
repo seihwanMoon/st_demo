@@ -1,6 +1,7 @@
 import os
 import streamlit as st
-from pandasai import SmartDataframe
+from pandasai import Agent
+# from pandasai import SmartDataframe
 from pandasai.connectors import PandasConnector
 import pandas as pd
 from dotenv import load_dotenv
@@ -99,7 +100,7 @@ if uploaded_file is not None:
             data = pd.read_excel(uploaded_file)
         st.dataframe(data, use_container_width=True)
         connector = PandasConnector({"original_df": data}, field_descriptions=field_descriptions)
-        df = SmartDataframe(connector, config={"llm": get_LLM(llm_type)})
+        df = Agent(connector, config={"llm": get_LLM(llm_type)})
 
     with col2:
         st.info("채팅 시작하기💬")
