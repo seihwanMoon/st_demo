@@ -2,9 +2,6 @@ streamlit
 pandas==1.5.3
 pandasai
 matplotlib==3.8.4
-seaborn
-dotenv
-os
 groq
 langchain-groq
 python-dotenv
