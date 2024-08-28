@@ -1,9 +1,11 @@
 streamlit
 pandas
-altair
+pandasai
 matplotlib
 seaborn
-scikit-learn
-scipy
+dotenv
+os
+groq
+
 
 
